@@ -1,0 +1,265 @@
+{
+  "id": "94bdadce-615c-4e51-85d1-be4cc2036559",
+  "version": "2.0",
+  "name": "D2-VITA-Formular-Dodavatel",
+  "url": "https://www.vita.sk/chceme-vita-ako-noveho-dodavatela-kurzov/",
+  "tests": [{
+    "id": "80da784b-4d64-4855-8934-d8327c4f3aaa",
+    "name": "T001_Odoslanie-Formular-Dodavatel",
+    "commands": [{
+      "id": "2e4ee271-7f09-4545-b97c-5d16612c9958",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.vita.sk/chceme-vita-ako-noveho-dodavatela-kurzov/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1f6531f-879a-4550-92e7-a31ef0e396df",
+      "comment": "",
+      "command": "type",
+      "target": "name=first_name",
+      "targets": [
+        ["name=first_name", "name"],
+        ["css=.filled > .form-control", "css:finder"],
+        ["xpath=//input[@name='first_name']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Adam"
+    }, {
+      "id": "4ce1ed78-96d9-4fc5-8064-a35e1f327d4a",
+      "comment": "",
+      "command": "//executeScript",
+      "target": "window.scrollTo(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "431df031-3f8e-45a4-8882-fcd89a018fa2",
+      "comment": "",
+      "command": "type",
+      "target": "name=last_name",
+      "targets": [
+        ["name=last_name", "name"],
+        ["css=.filled > .form-control", "css:finder"],
+        ["xpath=//input[@name='last_name']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Šangala"
+    }, {
+      "id": "51faee5c-97f8-472d-a344-8a55326f1a56",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.focus > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "adam@vita.sk"
+    }, {
+      "id": "ba4c8071-be16-42ec-818c-44865befe388",
+      "comment": "",
+      "command": "type",
+      "target": "name=company",
+      "targets": [
+        ["name=company", "name"],
+        ["css=.focus > .form-control", "css:finder"],
+        ["xpath=//input[@name='company']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "VITA Super s.r.o."
+    }, {
+      "id": "34faf489-0d39-4e45-8bf7-eb9fffcd0173",
+      "comment": "",
+      "command": "type",
+      "target": "name=ico",
+      "targets": [
+        ["name=ico", "name"],
+        ["css=.focus > .form-control", "css:finder"],
+        ["xpath=//input[@name='ico']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "46 759 786"
+    }, {
+      "id": "038053e7-56bf-4417-9344-2a64bd8aa371",
+      "comment": "",
+      "command": "type",
+      "target": "name=dic",
+      "targets": [
+        ["name=dic", "name"],
+        ["css=.focus > .form-control", "css:finder"],
+        ["xpath=//input[@name='dic']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "SK2023556766"
+    }, {
+      "id": "58b74e41-a740-40ad-90ea-bdfc49e6b5b6",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.focus > .form-control", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": "0908123123"
+    }, {
+      "id": "a092fea2-376c-4dce-a3ad-cbb1961e90e1",
+      "comment": "",
+      "command": "//executeScript",
+      "target": "window.scrollTo(0,1000)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b3033d4-df84-4e5c-9234-42047a0924b2",
+      "comment": "",
+      "command": "type",
+      "target": "name=message",
+      "targets": [
+        ["name=message", "name"],
+        ["css=.filled > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='message']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[9]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92907b7d-9a78-4716-8f29-8ed798fa643a",
+      "comment": "",
+      "command": "//executeScript",
+      "target": "window.scrollTo(0,1500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02fd659b-e19f-4310-bb45-1375524cae90",
+      "comment": "",
+      "command": "//check",
+      "target": "css=.hover > .icheckbox",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f711183-0f8b-49bb-83b1-338172a2b4de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .iCheck-helper",
+      "targets": [
+        ["css=.hover > .iCheck-helper", "css:finder"],
+        ["xpath=//form[@id='i-want-vita-form']/div[11]/div/label/div/ins", "xpath:idRelative"],
+        ["xpath=//ins", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e21c2e3f-2a60-44b5-b578-4bd318359989",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .iCheck-helper",
+      "targets": [
+        ["css=.hover > .iCheck-helper", "css:finder"],
+        ["xpath=//form[@id='i-want-vita-form']/div[12]/div/label/div/ins", "xpath:idRelative"],
+        ["xpath=//div[12]/div/label/div/ins", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84a963ef-a874-41f4-99a7-d8e8773613cb",
+      "comment": "",
+      "command": "click",
+      "target": "name=files[]",
+      "targets": [
+        ["name=files[]", "name"],
+        ["css=.focus-always > .form-control", "css:finder"],
+        ["xpath=//input[@name='files[]']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[10]/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "505a5bd9-d093-40f3-be46-214c14a4cdfd",
+      "comment": "",
+      "command": "type",
+      "target": "name=files[]",
+      "targets": [
+        ["name=files[]", "name"],
+        ["css=.focus-always > .form-control", "css:finder"],
+        ["xpath=//input[@name='files[]']", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[10]/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\D2-VITA-Formular-Dodavatel.side"
+    }, {
+      "id": "8bf4350b-40a1-448b-b51c-4e92a5db0cd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row > .button",
+      "targets": [
+        ["css=.form-row > .button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='i-want-vita-form']/div[13]/button", "xpath:idRelative"],
+        ["xpath=//div[13]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Odoslať do VITA Academy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ea24a984-3be7-4f4f-8b53-48197334856c",
+    "name": "T002_Odkazy-Subory",
+    "commands": [{
+      "id": "9ff89de9-ece2-4dc8-b08a-6a7c77bdffdb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.vita.sk/chceme-vita-ako-noveho-dodavatela-kurzov/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f969d765-ba42-4f73-b858-728120dcf4a8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Formulár nový dodávatel (xslx)",
+      "targets": [
+        ["linkText=Formulár nový dodávatel (xslx)", "linkText"],
+        ["css=p:nth-child(4) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Formulár nový dodávatel (xslx)')]", "xpath:link"],
+        ["xpath=//main[@id='body']/section/div/div/div/p[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.vita.sk/wp-content/uploads/2021/08/Novy_Dodavatel.xlsx')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Formulár nový dodávatel (xslx)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f12d877f-d820-46bc-bd94-4d9947ceaea9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text:nth-child(1)",
+      "targets": [
+        ["css=.text:nth-child(1)", "css:finder"],
+        ["xpath=//main[@id='body']/section/div/div/div", "xpath:idRelative"],
+        ["xpath=//section/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecd2c555-a7af-4738-b8de-43deb1dc1fea",
+      "comment": "",
+      "command": "echo",
+      "target": "Súbory sa stiahli!",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bc17e7f0-e451-44e3-97cc-1b40739e28d4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["80da784b-4d64-4855-8934-d8327c4f3aaa"]
+  }],
+  "urls": ["https://www.vita.sk/chceme-vita-ako-noveho-dodavatela-kurzov/"],
+  "plugins": []
+}
