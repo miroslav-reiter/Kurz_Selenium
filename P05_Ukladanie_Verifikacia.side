@@ -1,0 +1,164 @@
+{
+  "id": "58ebd0a5-c09d-46b0-98b1-cb37d8e16736",
+  "version": "2.0",
+  "name": "P4_Ukladanie_Verifikacia",
+  "url": "https://www.slovensko.sk/sk/titulna-stranka",
+  "tests": [{
+    "id": "45d9db8c-c2dd-4608-b113-e23b193df707",
+    "name": "TC_001_Ukladanie",
+    "commands": [{
+      "id": "90a7b0d0-9d8a-4674-8b52-7089fd73b337",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac5643ca-de70-478d-a06d-f228cd047b62",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "titulka"
+    }, {
+      "id": "ec8604fe-2fb4-420a-835a-596d6a68197b",
+      "comment": "",
+      "command": "echo",
+      "target": "Ahoj ${titulka}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d1ecf75-c326-4b97-8c20-aa7d1daa80f6",
+      "comment": "",
+      "command": "storeText",
+      "target": "linkText=Občan",
+      "targets": [
+        ["linkText=Občan", "linkText"],
+        ["css=.selected > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Občan')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/ul[3]/li/a", "xpath:idRelative"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Občan')]", "xpath:innerText"]
+      ],
+      "value": "typOsoby"
+    }, {
+      "id": "2883554c-cbc2-4c3f-a811-28e1625531b7",
+      "comment": "",
+      "command": "echo",
+      "target": "Typ osoby je: ${typOsoby}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5c3f8529-5280-42b1-84f6-a1c3202d56ad",
+    "name": "TC_002_Verifikacia",
+    "commands": [{
+      "id": "13e662cc-239c-4dc5-ad17-9240e48b4e85",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a0183ef-044c-4a32-a6ac-e13bccc01a7a",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "titulka"
+    }, {
+      "id": "924bd80f-7c98-4df0-9383-2887fa9a66f0",
+      "comment": "",
+      "command": "echo",
+      "target": "Ahoj ${titulka}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d035800b-5036-4ff5-887c-330aaacaff86",
+      "comment": "",
+      "command": "storeText",
+      "target": "linkText=Občan",
+      "targets": [
+        ["linkText=Občan", "linkText"],
+        ["css=.selected > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Občan')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/ul[3]/li/a", "xpath:idRelative"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Občan')]", "xpath:innerText"]
+      ],
+      "value": "typOsoby"
+    }, {
+      "id": "e031d927-cab4-48da-99a3-f0bc1bd63cb0",
+      "comment": "",
+      "command": "echo",
+      "target": "Typ osoby je: ${typOsoby}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff478f6c-489f-4623-8fb3-975726120d01",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=M13_shHelNavKontakt",
+      "targets": [
+        ["id=M13_shHelNavKontakt", "id"],
+        ["linkText=Kontakt", "linkText"],
+        ["css=#M13_shHelNavKontakt", "css:finder"],
+        ["xpath=//a[contains(text(),'Kontakt')]", "xpath:link"],
+        ["xpath=//a[@id='M13_shHelNavKontakt']", "xpath:attributes"],
+        ["xpath=//div[@id='helpNavigation']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sk/kontakt')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kontakt')]", "xpath:innerText"]
+      ],
+      "value": "kontakt"
+    }, {
+      "id": "2a1b7592-1c32-40f1-bbce-051bbb0c9bd9",
+      "comment": "Verifikácia prešla",
+      "command": "echo",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a784d42-3f6e-4265-82f3-2ff89e916e62",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=M13_shHelNavKontakt",
+      "targets": [
+        ["id=M13_shHelNavKontakt", "id"],
+        ["linkText=Kontakt", "linkText"],
+        ["css=#M13_shHelNavKontakt", "css:finder"],
+        ["xpath=//a[contains(text(),'Kontakt')]", "xpath:link"],
+        ["xpath=//a[@id='M13_shHelNavKontakt']", "xpath:attributes"],
+        ["xpath=//div[@id='helpNavigation']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sk/kontakt')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kontakt')]", "xpath:innerText"]
+      ],
+      "value": "kontakt"
+    }, {
+      "id": "e1acf217-2ef3-4e7b-bb17-98340d9dffba",
+      "comment": "",
+      "command": "echo",
+      "target": "Asercia prešla",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81186125-a4e9-40ed-9c7a-57120655c9ee",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6ef3d967-b294-4b2b-bc21-ee0316c3d704",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.slovensko.sk/sk/titulna-stranka"],
+  "plugins": []
+}
